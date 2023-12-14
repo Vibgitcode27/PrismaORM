@@ -15,7 +15,7 @@ function main() {
     return __awaiter(this, void 0, void 0, function* () {
         yield prisma.user.create({
             data: {
-                email: "vibhorphalke",
+                email: "vibhorphalke-to-be-deleted",
                 name: "Vibhor PHalke"
             }
         });

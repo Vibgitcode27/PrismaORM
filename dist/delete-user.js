@@ -13,12 +13,9 @@ const client_1 = require("@prisma/client");
 const prisma = new client_1.PrismaClient();
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
-        yield prisma.user.update({
+        yield prisma.user.delete({
             where: {
-                id: 1
-            },
-            data: {
-                name: "King Vibhor Phalke"
+                email: "vibhorphalke-to-be-deleted"
             }
         });
     });
